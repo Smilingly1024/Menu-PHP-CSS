@@ -1,0 +1,70 @@
+body {
+    font-family: 'Sarabun', sans-serif; /* เปลี่ยนฟอนต์เป็น Sarabun */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.menu-box {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    flex-direction: column; /* จัดตำแหน่งให้เป็นคอลัมน์ */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* ไม่ให้มีขีดเส้นใต้ */
+}
+
+.menu-box i {
+    font-size: 40px; /* ปรับขนาดไอคอน */
+    margin-bottom: 10px; /* ระยะห่างระหว่างไอคอนกับชื่อเมนู */
+}
+
+.menu-box span {
+    font-size: 18px; /* ขนาดชื่อเมนู */
+    text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบนเพื่อขยับชื่อเมนูลง */
+}
+
+.menu-box:hover {
+    background-color: #45a049;
+}
+
+.header-container {
+    position: absolute; /* ใช้ position absolute เพื่อวางที่มุมขวาบน */
+    top: 20px; /* ระยะห่างจากด้านบน */
+    right: 20px; /* ระยะห่างจากด้านขวา */
+    display: flex; /* ใช้ flexbox เพื่อจัดแนว */
+    align-items: center; /* จัดแนวให้กลางในแนวดิ่ง */
+}
+
+.datetime {
+    font-size: 16px; /* ขนาดฟอนต์ */
+    color: #333; /* สีข้อความ */
+    margin-left: 15px; /* ระยะห่างระหว่างชื่อผู้ใช้กับวันที่และเวลา */
+}
+
+.login-container, .register-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
